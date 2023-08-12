@@ -11,3 +11,16 @@
     background-size: cover;
     padding: 100px;
 }
+
+.card {
+    width: 300px;
+    margin: 20px;
+}
+
+.footer {
+    justify-content: center;
+}
+
+img {
+    max-height: 100%;
+}

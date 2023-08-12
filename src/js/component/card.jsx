@@ -1,21 +1,15 @@
 import React from "react";
 
 //create your first component
-const Card = () => {
+const Card = (props) => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="card">
+			<img className="card-img-top" src="https://i0.wp.com/boingboing.net/wp-content/uploads/2020/06/IMG_20200602_082003_707.jpg?fit=1080%2C1080&ssl=1" />
+			<div className="card-body">
+				<h5 className="card-title">{props.title}</h5>
+				<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" className="btn btn-primary">Go somewhere</a>
+			</div>
 		</div>
 	);
 };
